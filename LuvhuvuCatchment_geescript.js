@@ -439,9 +439,9 @@ Export.image.toDrive({
 // Export as an asset
 Export.image.toAsset({
   image: LULC_Updated,  
-  description: 'tugela_classification',
-  assetId: 'projects/mapwaps-tugela/assets/tugela_classification',  // Set your asset path
-  region: TugelaSite,  //
+  description: 'luvuvhu_classification',
+  assetId: 'projects/mapwaps-luvuvhu/assets/luvuvhu_classification',  // Set your asset path
+  region: LuvuvhuSite,  //
   scale: 10,  // Set the resolution (adjust as needed)
   maxPixels: 1e13  // Adjust this if needed based on image size
 });
@@ -461,7 +461,7 @@ print(validation_30, 'validation_30');
 
 Export.table.toDrive({
   collection: validation_30,
-  description:'TugClassification_validation_30',
+  description:'LuvClassification_validation_30',
   fileFormat: 'CSV'
 });
 
@@ -476,7 +476,7 @@ print(training_70, "training_70");
 
 Export.table.toDrive({
   collection: training_70,
-  description:'TugClassification_training_70',
+  description:'LuvClassification_training_70',
   fileFormat: 'CSV'
 });
 
@@ -534,13 +534,13 @@ var names = ['Alien_Gum','Alien_Other','Alien_Pine','Alien_Poplar','Alien_Wattle
 
 // Add color and and names
 for (var i = 0; i < 17; i++) {
-  legend.add(makeRow(TugelaPalette[i], names[i]));
+  legend.add(makeRow(Luv_Palette[i], names[i]));
   } 
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 /////     Load classification from assest to avoid running the classification again   //////
 ////////////////////////////////////////////////////////////////////////////////////////////  
-// var LULC_Updated = ee.Image('projects/mapwaps-tugela/assets/tugela_classification');  
+// var LULC_Updated = ee.Image('projects/mapwaps-luvuvhu/assets/luvuvhu_classification');  
   
   
 // // Specify split panels for the S2 image and classification ///////////////////////////////////////////////////////
@@ -549,14 +549,14 @@ var leftMap = ui.Map();
 var rightMap = ui.Map();
 
 // // Center the maps on the ROI
-leftMap.centerObject(TugelaSite, 9.2);
-rightMap.centerObject(TugelaSite, 9.2);
+leftMap.centerObject(LuvuvhuSite, 9.2);
+rightMap.centerObject(LuvuvhuSite, 9.2);
 
 // // Add layers to the left map (S2 image)
 leftMap.addLayer(imageclipped, {bands: ['B4', 'B3', 'B2'], max: 3000}, 'S2 Image');
 
 // // Add layers to the right map (classified map)
-rightMap.addLayer(LULC_Updated, {min: 1, max: 17, palette: TugelaPalette}, 'Land Cover Classification');
+rightMap.addLayer(LULC_Updated, {min: 1, max: 19, palette: Luv_Palette}, 'Land Cover Classification');
 rightMap.add(legend);
 
 
@@ -573,3 +573,4 @@ var splitPanel = ui.SplitPanel({
 ui.root.widgets().reset([splitPanel]);
 // // Link the maps for synchronization
 var linker = ui.Map.Linker([leftMap, rightMap]);
+
