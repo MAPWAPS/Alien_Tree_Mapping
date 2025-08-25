@@ -20,3 +20,7 @@ The MapWAPS results and traning dataset have been archived on SunScholar reposit
 5) Tugela Catchment: https://scholardata.sun.ac.za/articles/dataset/MapWAPS_Invasive_Alien_Plant_map_for_the_Tugela_Catchment/25066151
 7) Sabie-Crocodile Catchments: https://scholardata.sun.ac.za/articles/dataset/Invasive_Alien_Plant_map_for_the_Sabie-Crocodile_Catchments/25050368
 9) Olifants-Doring Catchments: https://scholardata.sun.ac.za/articles/dataset/MapWAPS_Invasive_Alien_Plant_map_for_the_Olifants-Doring_Catchments/29958053
+
+MapWAPS Water Research Commison report can be downloaded from this link: https://www.wrc.org.za/wp-content/uploads/mdocs/3193%20final.pdf
+
+#Acknowledgements
