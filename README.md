@@ -23,4 +23,4 @@ The MapWAPS results and traning dataset have been archived on SunScholar reposit
 
 MapWAPS Water Research Commison report can be downloaded from this link: https://www.wrc.org.za/wp-content/uploads/mdocs/3193%20final.pdf
 
-#Acknowledgements
+# Acknowledgements
