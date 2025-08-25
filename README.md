@@ -2,9 +2,9 @@
 This repository contains Google Earth Engine Code for the MapWAPS (Mapping woody invasive alien plants) project in five catchments in South Africa.
 
 The classification process was as follows:
-1. Filter and create the S2 image
-2.  Apply relevant ALOS bands
-3.  Apply relevant S2 bands and indices
+1. Call S2 image collection from imports and filter to get least cloudy image
+2. Import ALOS landform and elevation datasets
+3. Generate S2 indices and add them as bands to the image
 4. Create a training data subset
 5. Run RF classification with the training subset
 6. Stipulate colour palette and express the classification
