@@ -5,7 +5,7 @@ Map.centerObject(ROI, 7)
 Map.addLayer(ROI, {}, 'StudySite')
 
 ///////////////////////////////////////////////////////////
-/////                     Sentinel-2                  /////
+/////                     1.Sentinel-2                  /////
 //////////////////////////////////////////////////////////
 
 // Call S2 image collection from imports and filter to get least cloudy scence
@@ -33,7 +33,7 @@ Map.addLayer(Luv_Clipped, TrueColour, 'Sentinel Image');
 var image = Luv_Clipped.divide(10000)
 
 ///////////////////////////////////////////////////////////
-/////                     ALOS                       /////
+/////                     2.ALOS                       /////
 //////////////////////////////////////////////////////////
 
 //ALOS LANDFORM
@@ -63,7 +63,7 @@ var elevationVis = {
 Map.addLayer(elevation,elevationVis, 'elevation')
 
 ///////////////////////////////////////////////////////////
-/////               Generating Indices               /////
+/////               3.Generating Indices               /////
 //////////////////////////////////////////////////////////
 
 // Calculating indices from Sentinel-2 bands
@@ -367,6 +367,9 @@ var bands= ['B2', 'B3', 'B4', 'B5', 'B6', 'B7','B8','B8A', 'B9', 'B11', 'B12','N
 'NDVIre', 'NDVI1', 'NDVI2', 'NHI', 'EVI', 'EVI2', 'EVI2_2','MSAVI', 'Norm_G', 'Norm_NIR', 'Norm_Red', 'RededgePeakArea', 'RedSWIR1', 'RTVIcore', 'SAVI', 'SRBlueRededge1', 'SRBlueRededge2', 'SRBlueRededge3',
 'SRNIRnarrowBlue', 'SRNIRnarrowGreen', 'SRNIRnarrowRed', 'SRNIRnarrowRededge1', 'SRNIRnarrowRededge2', 'SRNIRnarrowRededge3', 'STI', 'WBI', 'NDMI', 'NDBR', 'constant', 'DSM',];
 
+///////////////////////////////////////////////////////////
+/////              4.Create training subset             /////
+//////////////////////////////////////////////////////////
 // TrainingData from imports
 var training_subset = image_final.select(bands).sampleRegions({
   collection: training, 
@@ -386,7 +389,7 @@ print(training_subset, 'training')
 // print(validation_subset, 'validation')
 
 ///////////////////////////////////////////////////////////
-/////                     Classification             /////
+/////                    5. Classification             /////
 //////////////////////////////////////////////////////////
 
 // // Random Forest
@@ -481,7 +484,7 @@ Export.table.toDrive({
 });
 
 ////////////////////////////////////////////////////////////////
-/////   Create legend and spilt panels for visualisation   /////
+/////   6. Create legend and spilt panels for visualisation   /////
 ///////////////////////////////////////////////////////////////
 
 // Adding a legend
@@ -573,4 +576,5 @@ var splitPanel = ui.SplitPanel({
 ui.root.widgets().reset([splitPanel]);
 // // Link the maps for synchronization
 var linker = ui.Map.Linker([leftMap, rightMap]);
+
 
