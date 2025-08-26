@@ -4,12 +4,12 @@ This repository contains Google Earth Engine Code for the MapWAPS (Mapping woody
 The classification process was as follows:
 1. Call Sentinel-2 image collection from imports and filter to get least cloudy image
 2. Import ALOS landform and elevation datasets
-3. Generate S2 indices and add them as bands to the image
+3. Generate Sentinel-2 indices and add them as bands to the image
 4. Create a training data subset
 5. Run RF classification with the training subset
 6. Stipulate colour palette and express the classification
 7. Add the Legend
-8. Specify split panels for the S2 image and classification
+8. Specify split panels for the Sentinel-2 image and classification
 9. Display the split panels
 
 Sentinel-2 and ALOS datasets required for the classifation can be loaded from Google Earth Engine archives. The training and validation datasets can be uploaded as assets. 
