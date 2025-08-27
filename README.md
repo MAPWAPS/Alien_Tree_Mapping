@@ -14,6 +14,8 @@ The classification process was as follows:
 
 Sentinel-2 and ALOS datasets required for the classifation can be loaded from Google Earth Engine archives. The training and validation datasets can be uploaded as assets. 
 
+The repository also includes R code for accuracy assessment, stratified sampling to split the dataset into 70% training and 30% validation, as well as scripts for generating jitter plots and wavelength plots.
+
 The MapWAPS results and traning dataset have been archived on SunScholar repository. 
 1) uMzimvubu Catchment: https://scholardata.sun.ac.za/articles/dataset/MapWAPS_Invasive_Alien_Plant_Map_for_the_uMzimvubu_Catchment/25050401
 3) Luvhuvu Catchment: https://scholardata.sun.ac.za/articles/dataset/MapWAPS_Invasive_Alien_Plant_Map_for_the_Luvuvhu_Catchment/25050314
