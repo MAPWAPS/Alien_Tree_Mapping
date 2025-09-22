@@ -28,4 +28,4 @@ MapWAPS Water Research Commison report can be downloaded from this link: https:/
 The citation for this code is on this link: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16964232.svg)](https://doi.org/10.5281/zenodo.16964232)
 
 # Acknowledgements
-Petra Holden
+Dr. Petra Holden
