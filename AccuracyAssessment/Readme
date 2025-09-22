@@ -1,2 +1,4 @@
 Please note that the training data points have been updated since these scripts were last executed. 
 It is therefore recommended to revise the code to ensure it reflects the updated training data.
+
+The stratified selection code is to help randomly select training data for the accuracy assessment (70/30 split).
