@@ -12,16 +12,16 @@ These inputs should be exported to Excel before running the script.
 
 ### Workflow
 
-Reads an Excel sheet containing the number of predicted LULC points/pixels inside each GT polygon.
+- Reads an Excel sheet containing the number of predicted LULC points/pixels inside each GT polygon.
 
-Calculates:
+- Calculates:
 
-Total number of pixels per GT polygon.
+  1. Total number of pixels per GT polygon.
 
-Percentage of correctly and incorrectly classified pixels.
+  2. Percentage of correctly and incorrectly classified pixels.
 
-Accuracy (%) for each GT polygon.
+  3. Accuracy (%) for each GT polygon.
 
-Joins GT LULC class names and IDs with the calculated accuracy.
+- Joins GT LULC class names and IDs with the calculated accuracy.
 
-Exports the final results to a new Excel file.
+- Exports the final results to a new Excel file.
