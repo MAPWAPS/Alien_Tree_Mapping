@@ -22,10 +22,13 @@ The MapWAPS results and traning dataset have been archived on SunScholar reposit
 5) Tugela Catchment: https://scholardata.sun.ac.za/articles/dataset/MapWAPS_Invasive_Alien_Plant_map_for_the_Tugela_Catchment/25066151
 7) Sabie-Crocodile Catchments: https://scholardata.sun.ac.za/articles/dataset/Invasive_Alien_Plant_map_for_the_Sabie-Crocodile_Catchments/25050368
 9) Olifants-Doring Catchments: https://scholardata.sun.ac.za/articles/dataset/MapWAPS_Invasive_Alien_Plant_map_for_the_Olifants-Doring_Catchments/29958053
+10) Cape Floristic Region: https://scholardata.sun.ac.za/articles/dataset/BioSCape_Invasive_Alien_Plant_map_for_the_Cape_Floristic_Region/27377211
 
 MapWAPS Water Research Commison report can be downloaded from this link: https://www.wrc.org.za/wp-content/uploads/mdocs/3193%20final.pdf
 
 The citation for this code is on this link: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16964232.svg)](https://doi.org/10.5281/zenodo.16964232)
 
 # Acknowledgements
-Dr. Petra Holden
+The code used in this study was adapted from Petra B. Holden, Alanna J. Rebelo, Mark G. New, 2021, Mapping invasive alien trees in water towers: A combined approach using satellite data fusion, drone technology and expert engagement,Remote Sensing Applications: Society and Environment, Volume 21, https://doi.org/10.1016/j.rsase.2020.100448.
+
+Mr Nicholas Coertze is acknowleged for his contribution with the Cape Floristic Region Alien Map.
