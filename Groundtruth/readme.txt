@@ -1,16 +1,16 @@
-Accuracy per Ground Truth Polygon
+# Accuracy per Ground Truth Polygon
 
-This repository contains a Python script that calculates the classification accuracy per ground truth (GT) polygon using output data exported from ArcGIS Pro's Summarize Statistics tool.
+This folder contains a Python script that calculates the classification accuracy per ground truth (GT) polygon using output data exported from ArcGIS Pro's Summarize Statistics tool.
 
-The workflow assumes you have:
+### For this workflow you must have:
 
-A RasterToPoint_SpatialJoin layer (classification results joined to GT polygons).
+1. A RasterToPoint_SpatialJoin layer (classification results joined to GT polygons).
 
-A summary statistics table generated from ArcGIS Pro.
+2. A summary statistics table generated from ArcGIS Pro.
 
 These inputs should be exported to Excel before running the script.
 
-Features
+### Workflow
 
 Reads an Excel sheet containing the number of predicted LULC points/pixels inside each GT polygon.
 
